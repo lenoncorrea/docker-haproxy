@@ -9,7 +9,6 @@ Run a simple command in folder docker: "docker-compose up -d"
 
 ## Operation
 ```mermaid
-graph LR
 A[HAProxy]
 A -- Resquest 1, 3, 5... --> B(Apache_Web_1)
 A -- Resquest 2, 4, 6... --> C(Apache_Web_2)
