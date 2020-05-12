@@ -21,11 +21,11 @@ services:
         build: ./haproxy
         ports:
             - 80:80
-        expose:
-            - 80
         networks:
             public_net:
                 ipv4_address: ${HA_PROXY_IP}
+        expose:
+            - 80
         environment:
             - APACHE_1_IP=${APACHE_1_IP}
             - APACHE_2_IP=${APACHE_2_IP}
